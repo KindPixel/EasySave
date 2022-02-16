@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lZsR/Ei3djdvhedT7Eu+UXNkT4fHxejW8QqGEpOZ6S7KKrovxJ2KlKFW9jTBq9HYYK2yV3vFgGVI4qusgPCF3Q==",
+  "success": true,
+  "projectFilePath": "D:\\EXIA\\A4\\EasySave\\EasySave\\EasySave.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cruel\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
