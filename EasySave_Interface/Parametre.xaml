@@ -1,0 +1,33 @@
+﻿<Window x:Class="EasySave_Interface.Parametre"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasySave_Interface"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="Parametre" Height="450" Width="600">
+    <Grid HorizontalAlignment="Center" Width="728">
+        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1"></Border>
+
+        <TextBlock x:Name="ListSofttxt" HorizontalAlignment="Left" Height="20" Margin="304,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" FontWeight="Bold"><Run Language="fr-fr" Text="List of professional soft" /></TextBlock>
+        <ListBox x:Name="proProcessList" Margin="304,101,257,174"/>
+        <Button x:Name="openLogs" Content="Open logs folder" Margin="500,101,81,0" Click="openLogs_Click" Height="20" VerticalAlignment="Top"/>
+        <TextBlock x:Name="softNameBox" HorizontalAlignment="Left" Height="20" Margin="304,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" FontWeight="Bold"><Run Language="fr-fr" Text="Name of the software" FontWeight="Bold"/></TextBlock>
+        <TextBox x:Name="softName" HorizontalAlignment="Left" Height="20" Margin="304,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+        <Button x:Name="addSoft" Content="Add" HorizontalAlignment="Left" Height="20" Margin="304,350,0,0" VerticalAlignment="Top" Width="167" Click="addSoft_Click"/>
+        <Button x:Name="delSoft" Content="Delete" HorizontalAlignment="Left" Height="20" Margin="304,385,0,0" VerticalAlignment="Top" Width="167" Click="delSoft_Click"/>
+        <Button x:Name="lang" Content="Switch to FR"  Margin="500,144,81,0" Click="Lang_Click" Height="20" VerticalAlignment="Top" Background="#FFDFDFDF"/>
+        <TextBox x:Name="FileSize" HorizontalAlignment="Left" Height="20" Margin="497,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" TextChanged="FileSize_TextChanged" />
+        <TextBlock x:Name="simultaneousFileSize" HorizontalAlignment="Left" Height="20" Margin="497,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" FontWeight="Bold"><Run Language="fr-fr" Text="Size of large file (Ko)" FontWeight="Bold"/></TextBlock>
+        <TextBlock x:Name="PriotaryExt" HorizontalAlignment="Left" Height="20" Margin="97,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" FontWeight="Bold"><Run Language="fr-fr" Text="List of "/><Run Text="priority extension"/></TextBlock>
+        <Image Source="pack://application:,,,/Images/easysave2.png" Margin="476,0,57,326" ></Image>
+        <Button Content="Ok&#xD;&#xA;" HorizontalAlignment="Left" Height="20" Margin="500,385,0,0" VerticalAlignment="Top" Width="147" Click="Button_Click_Exit"/>
+        <ListBox x:Name="ExtList" Margin="97,101,464,174"/>
+        <TextBlock x:Name="ExtNameBox" HorizontalAlignment="Left" Height="20" Margin="97,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" FontWeight="Bold"><Run Text="Name of the "/><Run Language="fr-fr" Text="extension"/></TextBlock>
+        <TextBox x:Name="ExtName" HorizontalAlignment="Left" Height="20" Margin="97,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+        <Button x:Name="addExt" Content="Add" HorizontalAlignment="Left" Height="20" Margin="97,350,0,0" VerticalAlignment="Top" Width="167" Click="addExt_Click"/>
+        <Button x:Name="delExt" Content="Delete" HorizontalAlignment="Left" Height="20" Margin="97,385,0,0" VerticalAlignment="Top" Width="167" Click="delExt_Click"/>
+
+    </Grid>
+</Window>
